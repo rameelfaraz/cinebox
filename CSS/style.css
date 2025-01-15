@@ -1,0 +1,1020 @@
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* Apply 'Orbitron' font to all headings */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+   /* Use the Orbitron font */
+    color: #FFFFFF;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    color: #FF4500;
+}
+nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #FF4500;
+    transition: color 0.3s;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    background-size: cover;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.hero button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #FF4500;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.hero button:hover {
+    background-color: #E63900;
+}
+/* Featured Movies Section */
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+.featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.movie-card {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-card img {
+    width: 100%;
+   /* Make image take full width of the container */
+    height: 200px;
+   /* Set a fixed height for all images */
+    object-fit: cover;
+   /* Ensure images cover the entire area of the container */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.movie-card h3 {
+    font-family: 'Orbitron', sans-serif;
+   /* Use the Orbitron font */
+    font-size: 1.2em;
+    color: #FF4500;
+    margin-top: 10px;
+    font-weight: 500;
+   /* Optional: Adjust the weight to your preference */
+}
+/* About Us Page Styles */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+   /* Set Orbitron font */
+}
+.about h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.team-member {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+.team-member:hover {
+    transform: scale(1.05);
+}
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.team-member p {
+    font-size: 1.1em;
+    color: #FF4500;
+}
+/* Services Page Styles */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+}
+.services h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.services p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.service {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+.service:hover {
+    transform: scale(1.05);
+}
+.service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.service p {
+    font-size: 1.1em;
+    color: #FF4500;
+}
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    color: #FF4500;
+}
+nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #FF4500;
+    transition: color 0.3s;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    background-size: cover;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.hero button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #FF4500;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.hero button:hover {
+    background-color: #E63900;
+}
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.gallery p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   /* Adjusted the min width */
+    gap: 20px;
+    justify-items: center;
+}
+.gallery-item {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: transform 0.3s ease;
+}
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+   /* Fixed height to ensure uniform size */
+    object-fit: cover;
+   /* Ensures image fully covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.gallery-item h3 {
+    font-family: 'Orbitron', sans-serif;
+   /* Used Orbitron font */
+    font-size: 1.2em;
+    color: #FF4500;
+    margin-top: 10px;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333333;
+    color: #E0E0E0;
+    margin-top: 20px;
+}
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    color: #FF4500;
+}
+nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #FF4500;
+    transition: color 0.3s;
+}
+/* Blog Section */
+.blog {
+    padding: 50px 20px;
+    text-align: center;
+}
+.blog h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.blog p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+/* Blog Posts Layout */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   /* Ensures 3 equal-width columns */
+    gap: 20px;
+    width: 100%;
+   /* Ensures it covers the full width of the page */
+    max-width: 100%;
+   /* Make sure the grid stretches fully */
+}
+.blog-post {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-post img {
+    width: 100%;
+   /* Ensures the image spans across the full width of its container */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.blog-post h3 {
+    font-size: 1.5em;
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+.blog-post p {
+    font-size: 1em;
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+.blog-post .read-more {
+    color: #FF4500;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.blog-post .read-more:hover {
+    color: #E63900;
+}
+/* Hover Effect for Blog Post */
+.blog-post:hover {
+    transform: scale(1.05);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333333;
+    color: #E0E0E0;
+    margin-top: 20px;
+}
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    color: #FF4500;
+}
+nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #FF4500;
+    transition: color 0.3s;
+}
+/* Reviews Section */
+.reviews {
+    padding: 50px 20px;
+    text-align: center;
+}
+.reviews h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+/* Reviews Grid */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   /* 4 columns for larger screens */
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+.review-card {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: transform 0.3s ease;
+}
+.review-card:hover {
+    transform: scale(1.05);
+}
+.review-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.review-card h3 {
+    font-family: 'Orbitron', sans-serif;
+   /* Apply Orbitron font */
+    font-size: 1.2em;
+    color: #FF4500;
+    margin-top: 10px;
+    font-weight: 500;
+   /* Adjust the weight as needed */
+}
+.review-card p {
+    font-size: 1em;
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+.review-card .read-more {
+    color: #FF4500;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.review-card .read-more:hover {
+    color: #E63900;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333333;
+    color: #E0E0E0;
+    margin-top: 20px;
+}
+/* Contact Us Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #FF4500;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size: 1em;
+}
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+button {
+    padding: 12px 30px;
+    background-color: #FF4500;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #E63900;
+}
+/* Movie Page Styling ( home sub pages) */
+.movie-page-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #222;
+   /* Dark background for better contrast */
+}
+.movie-page-container h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+   /* White color for heading */
+}
+.movie-page-container img {
+    width: 100%;
+    max-width: 600px;
+   /* Set a max-width for the image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 20px auto;
+}
+.movie-page-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+   /* White color for text */
+}
+.movie-page-container a {
+    text-decoration: none;
+    color: #ffcc00;
+   /* Yellow color for links to stand out */
+    font-weight: bold;
+}
+.movie-page-container a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+   /* Darker yellow for hover effect */
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+/* Style for Team Member Profile Pages */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header .logo {
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.profile {
+    padding: 40px;
+    text-align: center;
+}
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.profile-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.profile-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    margin: 0;
+}
+/* CSS for individual movie pages only (GALLERY-SUBPAGES) */
+body.movie-page {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background-color: #000;
+   /* Black background */
+    line-height: 1.6;
+}
+/* Header Styling (specific to movie pages) */
+body.movie-page header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body.movie-page header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+body.movie-page header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+body.movie-page header nav a:hover {
+    color: #ff6f61;
+}
+/* Movie Details Section */
+body.movie-page .movie-details {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+   /* Darker gray for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+body.movie-page .movie-details h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+body.movie-page .movie-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+body.movie-page .movie-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+body.movie-page .movie-info {
+    flex: 1;
+    padding: 10px 20px;
+}
+body.movie-page .movie-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+body.movie-page .movie-info strong {
+    color: #fff;
+}
+body.movie-page .movie-info .watch-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+body.movie-page .movie-info .watch-now:hover {
+    background-color: #ff8a80;
+}
+/* Footer Styling (specific to movie pages) */
+body.movie-page footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+body.movie-page footer p {
+    margin: 0;
+}
+/* General body and layout for blog pages (sub blog pages) */
+body {
+    font-family: 'Orbitron', sans-serif;
+   /* Changed to Orbitron font */
+    background-color: #000000;
+   /* Black background */
+    color: #ffffff;
+   /* White text */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #111;
+   /* Dark header */
+    padding: 20px;
+    text-align: center;
+}
+header .logo {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+}
+nav a:hover {
+    color: #ffd700;
+   /* Highlight on hover */
+}
+.blog-post {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+   /* Slightly lighter background for the post */
+    border-radius: 8px;
+}
+.blog-post h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+.blog-post .post-date {
+    font-size: 1em;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.blog-post p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+.blog-post h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ffd700;
+}
+.blog-post ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    color: #ddd;
+}
+.blog-post ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    font-size: 1em;
+}
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+}
+/* Specific styling for only the blog subpages */
+.blog-post-1 {
+    background-color: #292929;
+   /* Darker background for blog 1 */
+}
+.blog-post-2 {
+    background-color: #333333;
+   /* Different shade for blog 2 */
+}
+.blog-post-3 {
+    background-color: #3a3a3a;
+   /* Different shade for blog 3 */
+}
+/* Ensures specific styling for blog pages */
+.blog-post-1 img, .blog-post-2 img, .blog-post-3 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* Styling for the review-full section */
+.review-full {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+   /* Dark background for contrast */
+    color: #fff;
+   /* White text for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+   /* Subtle shadow */
+    font-family: 'Orbitron', sans-serif;
+   /* Matching the font style */
+}
+/* Styling for the heading inside the review section */
+.review-full h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6f61;
+   /* Accent color */
+    margin-bottom: 20px;
+}
+/* Review content container */
+.review-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* Styling for the movie image */
+.review-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+/* Styling for the movie information */
+.review-content p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+   /* Slightly lighter than white */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+/* Highlighting strong elements */
+.review-content strong {
+    color: #ff6f61;
+   /* Accent color for emphasis */
+}
+/* Personalized rating section */
+.rating {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #292929;
+   /* Slightly lighter background */
+    border-radius: 5px;
+}
+.rating h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.rating p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
